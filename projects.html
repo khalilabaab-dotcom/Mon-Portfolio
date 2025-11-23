@@ -1,103 +1,677 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Modern Business - Start Bootstrap Template</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100 bg-light">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Start Bootstrap</span></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
-                            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Modern Business - Start Bootstrap Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<style>
+    .project-img {
+        max-height: 360px;
+        object-fit: contain;
+    }
+
+    .project-carousel {
+        max-width: 380px;
+    }
+
+    @media (max-width: 992px) {
+        .project-card-flex {
+            flex-direction: column;
+        }
+
+        .project-carousel {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+</style>
+
+<body class="d-flex flex-column h-100 bg-light">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Portfolio .K</span></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resume.html">Parcours académique</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Experiences.html">Expériences
+                                professionnelles</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Competences.html">Compétences</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+                        <li class="nav-item"><a class="nav-link" href="excellence.html">Preuves d'excellence</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
                 </div>
-            </nav>
-            <!-- Projects Section-->
-            <section class="py-5">
-                <div class="container px-5 mb-5">
-                    <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <!-- Project Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+            </div>
+        </nav>
+        <!-- Projects Section-->
+        <section class="py-4">
+            <div class="container px-5 mb-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0">
+                        <span class="text-gradient d-inline">Projets pédagogiques</span>
+                    </h1>
+                </div>
+
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-10 col-xxl-9">
+
+                        <!-- ============================ -->
+                        <!-- 1. PFE Générateur d’oxygène -->
+                        <!-- ============================ -->
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center project-card-flex">
+                                    <!-- Texte -->
+                                    <div class="p-5 flex-grow-1">
+                                        <h2 class="fw-bolder mb-3">
+                                            Projet de fin d’étude (Licence) : Générateur de production d’oxygène
+                                        </h2>
+                                        <p>
+                                            Projet de Fin d’Études réalisé à l’ISET de Sfax :
+                                            <strong>Étude, Conception et Réalisation de la Partie Mécanique d’un
+                                                Générateur de production d’Oxygène</strong>.
+                                        </p>
+                                        <p>
+                                            L’objectif principal était de concevoir un générateur capable de produire de
+                                            l’oxygène à une pureté
+                                            supérieure à <strong>92&nbsp;% pour l’industrie</strong> et
+                                            <strong>95&nbsp;% pour le domaine médical</strong>.
+                                        </p>
+                                        <ul>
+                                            <li>Modélisation 3D complète de l’équipement et des sous-ensembles.</li>
+                                            <li>Sélection des matériaux et dimensionnement mécanique.</li>
+                                            <li>Validation expérimentale du prototype.</li>
+                                            <li>Application concrète des compétences en Génie Mécanique –
+                                                Instrumentation – Électromécanique.</li>
+                                        </ul>
                                     </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 2-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 2</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                    <!-- Carrousel images -->
+                                    <div class="flex-shrink-0 p-3">
+                                        <div id="carouselPFE" class="carousel slide project-carousel"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/PROJET PFE/005.png"
+                                                        alt="Projet générateur d’oxygène" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/PROJET PFE/1689981364270.jpg"
+                                                        alt="Projet générateur d’oxygène" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/PROJET PFE/1689981391119.jpg"
+                                                        alt="Projet générateur d’oxygène" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/PROJET PFE/1719949218534.jpg"
+                                                        alt="Projet générateur d’oxygène" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/PROJET PFE/WhatsApp Image 2023-06-18 at 18.15.05 (2).jpeg"
+                                                        alt="Projet générateur d’oxygène" />
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselPFE" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Précédent</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselPFE" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Suivant</span>
+                                            </button>
                                         </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Call to action section-->
-            <section class="py-5 bg-gradient-primary-to-secondary text-white">
-                <div class="container px-5 my-5">
-                    <div class="text-center">
-                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
-                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
-                    <div class="col-auto">
-                        <a class="small" href="#!">Privacy</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Terms</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="#!">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+
+                        <!-- =============================== -->
+                        <!-- 2. PFA – Macro VBA / Trémie    -->
+                        <!-- =============================== -->
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center project-card-flex">
+                                    <div class="p-5 flex-grow-1">
+                                        <h2 class="fw-bolder mb-3">
+                                            Projet de PFA : Macro VBA pour la conception d’une trémie
+                                        </h2>
+                                        <p>
+                                            Projet de PFA développé avec <strong>SolidWorks</strong> : création de
+                                            macros
+                                            <strong>VBA</strong> dans un logiciel de CAO pour l’optimisation des tâches
+                                            d’ingénierie liées à la
+                                            conception d’une trémie.
+                                        </p>
+                                        <ul>
+                                            <li>Interface utilisateur paramétrable (dimensions, hauteurs, décalages).
+                                            </li>
+                                            <li>Génération automatique du modèle 3D selon les paramètres saisies.</li>
+                                            <li>Gain de temps significatif pour les calculs et la conception répétitive.
+                                            </li>
+                                            <li>Intégration dans le workflow d’ingénierie chez OEM engineering.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex-shrink-0 p-3">
+                                        <div id="carouselPFA" class="carousel slide project-carousel"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet PFA/,,,;h.png"
+                                                        alt="Projet macro VBA trémie" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet PFA/Imah,ge1.png"
+                                                        alt="Projet macro VBA trémie" />
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselPFA" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Précédent</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselPFA" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Suivant</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ============================================ -->
+                        <!-- 3. Maîtrise des Techniques de CND           -->
+                        <!-- ============================================ -->
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center project-card-flex">
+                                    <div class="p-5 flex-grow-1">
+                                        <h2 class="fw-bolder mb-3">
+                                            Maîtrise des Techniques de Contrôle Non Destructif (CND)
+                                        </h2>
+                                        <p>
+                                            Mise en pratique de différentes techniques de <strong>Contrôle Non
+                                                Destructif</strong>
+                                            pour vérifier l’intégrité des matériaux et détecter les discontinuités.
+                                        </p>
+                                        <ul>
+                                            <li><strong>Ressuage (PT)</strong> pour la détection des fissures de
+                                                surface.</li>
+                                            <li><strong>Magnétoscopie (MT)</strong> pour les pièces ferromagnétiques.
+                                            </li>
+                                            <li><strong>Ultrasons (UT)</strong> pour les défauts internes volumétriques.
+                                            </li>
+                                            <li><strong>Courants de Foucault (ET)</strong> pour l’analyse de surface et
+                                                de proximité.</li>
+                                        </ul>
+                                        <p>
+                                            Ces travaux démontrent la capacité à appliquer rigoureusement des méthodes
+                                            CND
+                                            conformes aux standards industriels de qualité.
+                                        </p>
+                                    </div>
+                                    <div class="flex-shrink-0 p-3">
+                                        <div id="carouselCND" class="carousel slide project-carousel"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/Image1.jpg" alt="Contrôle Non Destructif" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/Image2.jpg" alt="Contrôle Non Destructif" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/Image3.jpg" alt="Contrôle Non Destructif" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/Image4.jpg" alt="Contrôle Non Destructif" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/Image5.jpg" alt="Contrôle Non Destructif" />
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselCND" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Précédent</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselCND" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Suivant</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ========================================================== -->
+                        <!-- 4. Projets personnels – Outillage presse & bloc de levage -->
+                        <!-- ========================================================== -->
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center project-card-flex">
+                                    <div class="p-5 flex-grow-1">
+                                        <h2 class="fw-bolder mb-3">
+                                            Projets personnels : Outillage de presse & bloc de levage
+                                        </h2>
+                                        <p>
+                                            Étude et conception de systèmes mécaniques liés à la fabrication et à la
+                                            manutention.
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <strong>Outil de presse suisse pour rondelle</strong> : conception 3D,
+                                                choix
+                                                des éléments normalisés, guidage et efforts de presse.
+                                            </li>
+                                            <li>
+                                                <strong>Bloc de levage pour monte-charge</strong> : dimensionnement du
+                                                tambour,
+                                                arbre, moteur et organes de transmission.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex-shrink-0 p-3">
+                                        <div id="carouselPresseLevage" class="carousel slide project-carousel"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/1689470487162.jpg"
+                                                        alt="Outil de presse et bloc de levage" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/1689470487162.jpg"
+                                                        alt="Outil de presse et bloc de levage" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img" src="assets/Projet/hhhh.png"
+                                                        alt="Outil de presse et bloc de levage" />
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselPresseLevage" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Précédent</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselPresseLevage" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Suivant</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ========================================================== -->
+                        <!-- 5. Projets personnels – Armoires électriques/pneumatiques  -->
+                        <!-- ========================================================== -->
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center project-card-flex">
+                                    <div class="p-5 flex-grow-1">
+                                        <h2 class="fw-bolder mb-3">
+                                            Projets personnels : Armoires électriques & pneumatiques
+                                        </h2>
+                                        <p>
+                                            Conception d’armoires techniques pour le pilotage et la commande
+                                            d’équipements industriels.
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <strong>Armoires électriques</strong> : intégration d’automates,
+                                                protections,
+                                                interfaces de commande (HMI, boutons, voyants).
+                                            </li>
+                                            <li>
+                                                <strong>Armoires pneumatiques</strong> : disposition des distributeurs,
+                                                vérins,
+                                                raccords et instruments de régulation.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex-shrink-0 p-3">
+                                        <div id="carouselArmoires" class="carousel slide project-carousel"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/armoire elec ouvert.jpg"
+                                                        alt="Armoires électriques et pneumatiques" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/WhatsApp Image 2023-06-18 at 18.15.05 (4).jpeg"
+                                                        alt="Armoires électriques et pneumatiques" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/WhatsApp Image 2023-06-18 at 18.15.05 (5).jpeg"
+                                                        alt="Armoires électriques et pneumatiques" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/WhatsApp Image 2023-06-18 at 18.15.05 (6).jpeg"
+                                                        alt="Armoires électriques et pneumatiques" />
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselArmoires" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Précédent</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselArmoires" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Suivant</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ===================================== -->
+                        <!-- 6. Projet personnel – Pipeline        -->
+                        <!-- ===================================== -->
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center project-card-flex">
+                                    <div class="p-5 flex-grow-1">
+                                        <h2 class="fw-bolder mb-3">
+                                            Projet personnel : Conception d’une pipeline (appareil sous pression)
+                                        </h2>
+                                        <p>
+                                            Conception d’un <strong>appareil sous pression</strong> de type pipeline,
+                                            incluant
+                                            les brides, les liaisons boulonnées et les supports.
+                                        </p>
+                                        <ul>
+                                            <li>Dimensionnement du tube et des brides.</li>
+                                            <li>Vérification des épaisseurs par critères de résistance.</li>
+                                            <li>Préparation pour future validation par calcul par éléments finis.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex-shrink-0 p-3">
+                                        <div id="carouselPipeline" class="carousel slide project-carousel"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/colonne 1.PNG"
+                                                        alt="Projet pipeline pression" />
+                                                </div>
+                                            </div>
+                                            <!-- Pas de contrôles car une seule image (optionnel) -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ============================================== -->
+                        <!-- 7. Simulation par logiciel Ansys              -->
+                        <!-- ============================================== -->
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center project-card-flex">
+                                    <div class="p-5 flex-grow-1">
+                                        <h2 class="fw-bolder mb-3">Simulation numérique – ANSYS</h2>
+                                        <p>
+                                            Projets de <strong>calcul par éléments finis</strong> réalisés sous ANSYS
+                                            pour analyser la
+                                            tenue mécanique de composants soumis à des charges complexes.
+                                        </p>
+                                        <ul>
+                                            <li>Études en <strong>structure statique</strong> (contraintes de Von Mises,
+                                                déplacements).</li>
+                                            <li>Analyse des distributions de contraintes dans des brides, bagues et
+                                                tuyaux.</li>
+                                            <li>Optimisation de la géométrie en fonction des résultats de simulation.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex-shrink-0 p-3">
+                                        <div id="carouselAnsys" class="carousel slide project-carousel"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/Image6.png" alt="Simulation ANSYS" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/Image7.png" alt="Simulation ANSYS" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/Image8.png" alt="Simulation ANSYS" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/Image9.png" alt="Simulation ANSYS" />
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselAnsys" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Précédent</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselAnsys" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Suivant</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ============================================== -->
+                        <!-- 8. Simulation par SolidWorks                  -->
+                        <!-- ============================================== -->
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center project-card-flex">
+                                    <div class="p-5 flex-grow-1">
+                                        <h2 class="fw-bolder mb-3">Simulation par logiciel SolidWorks</h2>
+                                        <p>
+                                            Simulations réalisées avec le module <strong>SolidWorks Simulation</strong>,
+                                            appliquées à des structures mécaniques, bobines, cadres et pièces de
+                                            support.
+                                        </p>
+                                        <ul>
+                                            <li>Calcul de contraintes équivalentes (Von Mises).</li>
+                                            <li>Étude du comportement sous charges réparties et concentrées.</li>
+                                            <li>Validation de la rigidité et de la résistance des structures conçues.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex-shrink-0 p-3">
+                                        <div id="carouselSolidworks" class="carousel slide project-carousel"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/Image10.png" alt="Simulation SolidWorks" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/Image11.png" alt="Simulation SolidWorks" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/Image12.png" alt="Simulation SolidWorks" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/Image13.png" alt="Simulation SolidWorks" />
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselSolidworks" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Précédent</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselSolidworks" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Suivant</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ============================================== -->
+                        <!-- 9. Simulation par ABAQUS                     -->
+                        <!-- ============================================== -->
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center project-card-flex">
+                                    <div class="p-5 flex-grow-1">
+                                        <h2 class="fw-bolder mb-3">Simulation par logiciel ABAQUS</h2>
+                                        <p>
+                                            Études numériques menées sous <strong>ABAQUS</strong> pour la modélisation
+                                            détaillée de pièces et l’analyse de leurs comportements sous chargement.
+                                        </p>
+                                        <ul>
+                                            <li>Modélisation, maillage et définition des conditions aux limites.</li>
+                                            <li>Évaluation des champs de contraintes et déplacements.</li>
+                                            <li>Validation de solutions mécaniques pour des configurations complexes.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex-shrink-0 p-3">
+                                        <div id="carouselAbaqus" class="carousel slide project-carousel"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/Image14.png" alt="Simulation ABAQUS" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/Image15.png" alt="Simulation ABAQUS" />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/Image16.png" alt="Simulation ABAQUS" />
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselAbaqus" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Précédent</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselAbaqus" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Suivant</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ============================================== -->
+                        <!-- 10. Calcul RDM via RDM 6                     -->
+                        <!-- ============================================== -->
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex align-items-center project-card-flex">
+                                    <div class="p-5 flex-grow-1">
+                                        <h2 class="fw-bolder mb-3">Calcul de RDM avec le logiciel RDM 6</h2>
+                                        <p>
+                                            Utilisation du logiciel <strong>RDM 6</strong> pour le calcul des
+                                            sollicitations et des déformées de poutres soumises à des chargements
+                                            variés.
+                                        </p>
+                                        <ul>
+                                            <li>Tracé des diagrammes de moments fléchissants et efforts tranchants.</li>
+                                            <li>Calcul des flèches et vérification des limites admissibles.</li>
+                                            <li>Formation à la résistance des matériaux appliquée à des cas industriels.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="flex-shrink-0 p-3">
+                                        <div id="carouselRDM6" class="carousel slide project-carousel"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100 project-img"
+                                                        src="assets/Projet/Image17.png" alt="Calcul RDM6" />
+                                                </div>
+                                            </div>
+                                            <!-- pas de contrôles nécessaires ici aussi -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- col -->
+                </div><!-- row -->
+            </div><!-- container -->
+        </section>
+
+        <!-- Call to action section-->
+
+    </main>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
